@@ -1,3 +1,7 @@
 {
-  "*.ts": ["npx eslint 'src/**' --fix", "npx prettier --check 'src/**'"]
+  "*.ts": [
+    "eslint \"src/*\" --fix",
+    "prettier --check \"src/**\"",
+    "npm run test:staged"
+  ]
 }
